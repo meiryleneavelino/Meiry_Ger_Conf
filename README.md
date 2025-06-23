@@ -6,14 +6,14 @@
 
 ---
 
-## 🔍 Análise de Maturidade SAST em Projetos Open Source do GitHub
+## Análise de Maturidade SAST em Projetos Open Source do GitHub
 
 Este repositório contém um script Python projetado para identificar e avaliar a maturidade da implementação de **Análise Estática de Segurança de Aplicações (SAST)** em pipelines de CI/CD de projetos de código aberto hospedados no GitHub.  
 O objetivo é compreender como projetos de alta reputação integram práticas de segurança automatizada.
 
 ---
 
-## ⚙️ Etapas do Script
+## Etapas do Script
 
 ### 1. Busca de Repositórios Populares (API GraphQL)
 
@@ -53,7 +53,7 @@ Classificação final:
 
 ---
 
-## 🚀 Como Usar
+## Como Usar
 
 ### Pré-requisitos
 
