@@ -51,7 +51,43 @@ Classificação final:
 
 - Os resultados são exportados no arquivo `sast_maturity_results.csv`.
 
+### 6. Saída esperada
+
+Durante a execução, o script exibirá:
+
+- A query GraphQL utilizada
+- Status do Rate Limit da API
+- Progresso da paginação
+- Verificação de workflows e presença de SAST
+
+#### Conteúdo do arquivo sast_maturity_results.csv:
+
+Campo	                                    Descrição
+nome_completo	                            owner/nome do repositório
+url	                                      URL do repositório
+estrelas	                                Número de estrelas
+forks	                                    Número de forks
+ultimo_push	                              Data do último push
+linguagem_principal	                      Linguagem predominante
+descricao	                                Descrição do projeto
+arquivos_workflow_sast	                  Arquivos de workflow com SAST
+nivel_maturidade_sast	                    Baixo, Médio ou Alto
+sast_ferramentas_detectadas	              Lista de palavras-chave encontradas
+maturidade_has_cache_config	              Uso de cache
+maturidade_has_pr_trigger	                Trigger em Pull Request
+maturidade_has_push_trigger	              Trigger em Push
+maturidade_has_fail_fast_or_gate	        Fail-fast / Quality Gate
+maturidade_integrates_dependabot_sca	    Integração com Dependabot/Snyk
+
 ---
+
+# Contribuições são bem-vindas!
+Você pode:
+- Expandir a lista de SAST_KEYWORDS
+- Adicionar suporte a outras plataformas de CI/CD (ex: GitLab, Jenkins, Azure)
+- Refinar os critérios de avaliação de maturidade
+
+Sinta-se à vontade para abrir issues ou enviar pull requests!
 
 ## Como Usar
 
@@ -66,7 +102,6 @@ Classificação final:
   - `time`
   - `base64`
 
-Instalação:
 
-```bash
-pip install requests
+
+
